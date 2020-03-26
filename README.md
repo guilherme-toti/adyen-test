@@ -41,3 +41,5 @@ To build and automatically deploy it to GitHub Pages
 ```
 $ yarn deploy
 ```
+
+After deployment is done, access [https://guilherme-toti.github.io/adyen-test](https://guilherme-toti.github.io/adyen-test)
