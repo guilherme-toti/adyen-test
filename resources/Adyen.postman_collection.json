@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "9bc2e29f-9d3c-4237-b2a3-52d4f10703d2",
+		"name": "Adyen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AccuWeather",
+			"item": [
+				{
+					"name": "Current Conditions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dataservice.accuweather.com/currentconditions/v1/249758?apikey={{apikey}}",
+							"protocol": "https",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"currentconditions",
+								"v1",
+								"249758"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								},
+								{
+									"key": "details",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forecast 5 days",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://dataservice.accuweather.com/forecasts/v1/daily/5day/249758?apikey={{apikey}}",
+							"protocol": "http",
+							"host": [
+								"dataservice",
+								"accuweather",
+								"com"
+							],
+							"path": [
+								"forecasts",
+								"v1",
+								"daily",
+								"5day",
+								"249758"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}"
+								},
+								{
+									"key": "details",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Kiwi",
+			"item": [
+				{
+					"name": "Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.skypicker.com/locations?term=Madrid&location_types=airport&limit=1&active_only=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"skypicker",
+								"com"
+							],
+							"path": [
+								"locations"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "Madrid"
+								},
+								{
+									"key": "location_types",
+									"value": "airport"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "active_only",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Flights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.skypicker.com/flights?flyFrom=AMS&to=MAD&partner=picky",
+							"protocol": "https",
+							"host": [
+								"api",
+								"skypicker",
+								"com"
+							],
+							"path": [
+								"flights"
+							],
+							"query": [
+								{
+									"key": "flyFrom",
+									"value": "AMS"
+								},
+								{
+									"key": "to",
+									"value": "MAD"
+								},
+								{
+									"key": "partner",
+									"value": "picky"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
