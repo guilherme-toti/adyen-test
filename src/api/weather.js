@@ -3,7 +3,7 @@ import { getCityKey } from '../lib/cities'
 import { Conditions, Forecast } from './models/weather'
 
 const API_KEY = 'hWIKuLs88HFcXk6ehT6THGCXYNwFEDO7'
-const BASE_URL = 'http://dataservice.accuweather.com/'
+const BASE_URL = 'https://dataservice.accuweather.com/'
 
 const currentConditions = city => {
   const cityKey = getCityKey(city)
