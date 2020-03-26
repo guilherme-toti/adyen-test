@@ -1,0 +1,30 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./animate.css";
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  src: url('../fonts/avenir-next.otf');
+}
+
+@font-face {
+  font-family: 'Avenir Next Bold';
+  font-style: normal;
+  src: url('../fonts/avenir-next-bold.otf');
+}
+
+.font-avenir-bold {
+  font-family: 'Avenir Next Bold';
+}
+
+body {
+  font-family: 'Avenir Next';
+  @apply h-screen;
+  @apply bg-gray-100;
+}
+
+#root {
+  @apply h-screen;
+}
