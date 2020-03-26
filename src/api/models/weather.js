@@ -13,7 +13,6 @@ export const Forecast = data => {
   const maxTemperature = data.DailyForecasts.map(d => d.Temperature.Maximum.Value)
 
   return {
-    text: data.Headline.Text,
     averageTemperature: {
       min: {
         value: parseInt(getAverage(minTemperature)),

@@ -37,13 +37,9 @@ describe('Weather models', () => {
 
   describe('Forecast model', () => {
     it('returns the expected value', () => {
-      const text = 'A little snow Sunday morning will not accumulate'
       const unit = 'F'
 
       const dataFromApi = {
-        "Headline": {
-          "Text": text,
-        },
         "DailyForecasts": [
           {
             "Temperature": {
@@ -91,7 +87,6 @@ describe('Weather models', () => {
       }
 
       const expectedValue = {
-        text,
         averageTemperature: {
           min: {
             unit,
