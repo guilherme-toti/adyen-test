@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/adyen-test/static/css/main.42f43015.chunk.css",
+    "main.js": "/adyen-test/static/js/main.d146afae.chunk.js",
+    "main.js.map": "/adyen-test/static/js/main.d146afae.chunk.js.map",
+    "runtime-main.js": "/adyen-test/static/js/runtime-main.7eaf894c.js",
+    "runtime-main.js.map": "/adyen-test/static/js/runtime-main.7eaf894c.js.map",
+    "static/js/2.f6fc40a8.chunk.js": "/adyen-test/static/js/2.f6fc40a8.chunk.js",
+    "static/js/2.f6fc40a8.chunk.js.map": "/adyen-test/static/js/2.f6fc40a8.chunk.js.map",
+    "index.html": "/adyen-test/index.html",
+    "precache-manifest.a7a25254fc04a7c360bb71331d4565e2.js": "/adyen-test/precache-manifest.a7a25254fc04a7c360bb71331d4565e2.js",
+    "service-worker.js": "/adyen-test/service-worker.js",
+    "static/css/main.42f43015.chunk.css.map": "/adyen-test/static/css/main.42f43015.chunk.css.map",
+    "static/js/2.f6fc40a8.chunk.js.LICENSE.txt": "/adyen-test/static/js/2.f6fc40a8.chunk.js.LICENSE.txt",
+    "static/media/airplane-unsplash.jpg": "/adyen-test/static/media/airplane-unsplash.49819b21.jpg",
+    "static/media/tailwind.css": "/adyen-test/static/media/avenir-next.b5ed9330.otf",
+    "static/media/clouds-unsplash.jpg": "/adyen-test/static/media/clouds-unsplash.799f5d9d.jpg",
+    "static/media/home-background.png": "/adyen-test/static/media/home-background.bd6936e4.png",
+    "static/media/tickets-loading.svg": "/adyen-test/static/media/tickets-loading.e39d1c3a.svg",
+    "static/media/weather-loading.svg": "/adyen-test/static/media/weather-loading.50538102.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7eaf894c.js",
+    "static/js/2.f6fc40a8.chunk.js",
+    "static/css/main.42f43015.chunk.css",
+    "static/js/main.d146afae.chunk.js"
+  ]
+}
