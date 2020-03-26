@@ -29,7 +29,7 @@ const Home = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <img className="w-full h-screen animated fadeIn slow" src={BackgroundImage} alt="Work around the world" />
+        <img className="w-full h-screen animated fadeIn slow delay-2s" src={BackgroundImage} alt="Work around the world" />
       </div>
     </div>
   );
