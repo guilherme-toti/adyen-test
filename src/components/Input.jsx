@@ -50,7 +50,7 @@ const Input = () => {
         </>
       ) : (
         <>
-          <div>
+          <div className="flex-grow">
             <select
               value={departureCode || ''}
               onChange={e => setDepartureCode(e.target.value)}
