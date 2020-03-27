@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c59a8c98418ca1520de3a76bf2435214",
+    "revision": "94ce6d2b7a9f3db5872bc5dc65e1195c",
     "url": "/adyen-test/index.html"
   },
   {
-    "revision": "ecc2dff2c6b97915ae14",
+    "revision": "f740d7d3815fe868b654",
     "url": "/adyen-test/static/css/main.42f43015.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adyen-test/static/js/2.d7389ff3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ecc2dff2c6b97915ae14",
-    "url": "/adyen-test/static/js/main.96978621.chunk.js"
+    "revision": "f740d7d3815fe868b654",
+    "url": "/adyen-test/static/js/main.5ba074b0.chunk.js"
   },
   {
     "revision": "5d944e29e4e02b1baa66",
