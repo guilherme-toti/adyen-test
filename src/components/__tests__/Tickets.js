@@ -2,6 +2,8 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { act } from "react-dom/test-utils";
 
+import { AppContextProvider } from '../../contexts/AppContext'
+
 import useApi from '../../api/useApi'
 import Tickets from '../Tickets'
 
@@ -27,7 +29,11 @@ describe('<Tickets /> component', () => {
       {}, true
     ]))
 
-    const wrapper = mount(<Tickets city={city} />)
+    const wrapper = mount(
+      <AppContextProvider>
+        <Tickets city={city} />
+      </AppContextProvider>
+    )
 
     expect(wrapper.find('p').html()).toContain('Haggling')
   })
@@ -40,7 +46,11 @@ describe('<Tickets /> component', () => {
     let wrapper;
 
     await act(async () => {
-      wrapper = mount(<Tickets city={city} />)
+      wrapper = mount(
+        <AppContextProvider>
+          <Tickets city={city} />
+        </AppContextProvider>
+      )
     });
 
     expect(wrapper.find('.card-title').html()).toContain('Tickets')

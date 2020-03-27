@@ -5,12 +5,14 @@ import {
   Route,
 } from "react-router-dom"
 
+import { AppContextProvider } from './contexts/AppContext'
+
 import ScrollToTop from './components/ScrollToTop'
 import Result from './views/Result'
 import Home from './views/Home'
 
-function App() {
-  return (
+const App = () => (
+  <AppContextProvider>
     <Router basename="/">
       <ScrollToTop />
       <Switch>
@@ -18,7 +20,7 @@ function App() {
         <Route path="/" component={Home} />
       </Switch>
     </Router>
-  );
-}
+  </AppContextProvider>
+)
 
 export default App;

@@ -1,9 +1,21 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import {
+  HashRouter as Router,
+} from "react-router-dom"
+import { render } from '@testing-library/react'
+import routeData from 'react-router'
 
+import { AppContextProvider } from '../../contexts/AppContext'
 import Result from '../Result'
 
 describe('Views -> Result', () => {
+  beforeEach(() => {
+    const mockHistory = {
+      push: () => {}
+    };
+    jest.spyOn(routeData, 'useHistory').mockReturnValue(mockHistory);
+  });
+
   const city = 'madrid'
   const props = {
     match: {
@@ -14,12 +26,24 @@ describe('Views -> Result', () => {
   }
 
   it('renders', () => {
-    shallow(<Result {...props} />)
+    render(
+      <AppContextProvider>
+        <Router>
+          <Result {...props} />
+        </Router>
+      </AppContextProvider>
+    )
   })
 
   it('has a valid header', () => {
-    const wrapper = shallow(<Result {...props} />)
+    const { getByText } = render(
+      <AppContextProvider>
+        <Router>
+          <Result {...props} />
+        </Router>
+      </AppContextProvider>
+    )
 
-    expect(wrapper.find('h1').html()).toContain(city)
+    expect(getByText(city)).toBeInTheDocument()
   })
 })

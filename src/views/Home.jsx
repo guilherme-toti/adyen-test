@@ -3,6 +3,7 @@ import React from 'react'
 import BackgroundImage from '../assets/images/home-background.png'
 import Logo from '../components/Logo'
 import Select from '../components/Select'
+import Input from '../components/Input'
 
 const Home = () => {
   return (
@@ -14,9 +15,17 @@ const Home = () => {
             <h1 className="text-4xl animated fadeInLeft">Work <span className="text-orange-400">Around the World</span></h1>
             <h2 className="text-lg animated fadeInLeft delay-1s">If you want to relocate, this is the first step</h2>
           </div>
-
-          <div className="w-full sm:w-1/3 py-10 md:py-0 animated fadeIn delay-2s">
+          <div className="w-full sm:w-2/3 py-10 md:py-0 animated fadeIn delay-2s">
             <div className="animated pulse delay-3s">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                I am in
+              </label>
+              <Input />
+            </div>
+            <div className="animated pulse delay-4s mt-10">
+              <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                I am interested in
+              </label>
               <Select />
             </div>
           </div>

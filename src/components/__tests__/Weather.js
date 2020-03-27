@@ -2,6 +2,8 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { act } from "react-dom/test-utils";
 
+import { AppContextProvider } from '../../contexts/AppContext'
+
 import useApi from '../../api/useApi'
 import Weather from '../Weather'
 
@@ -41,7 +43,11 @@ describe('<Weather /> component', () => {
       {}, true
     ]))
 
-    const wrapper = mount(<Weather city={city} />)
+    const wrapper = mount(
+      <AppContextProvider>
+        <Weather city={city} />
+      </AppContextProvider>
+    )
 
     expect(wrapper.find('p').html()).toContain('Waiting')
   })
@@ -54,7 +60,11 @@ describe('<Weather /> component', () => {
     let wrapper;
 
     await act(async () => {
-      wrapper = mount(<Weather city={city} />)
+      wrapper = mount(
+        <AppContextProvider>
+          <Weather city={city} />
+        </AppContextProvider>
+      )
     });
 
     expect(wrapper.find('.card-title').html()).toContain('Weather')

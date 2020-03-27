@@ -1,16 +1,32 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import {
+  HashRouter as Router,
+} from "react-router-dom"
+import { render } from '@testing-library/react'
 
+import { AppContextProvider } from '../../contexts/AppContext'
 import Home from '../Home'
 
 describe('Views -> Home', () => {
   it('renders', () => {
-    shallow(<Home />)
+    render(
+      <AppContextProvider>
+        <Router>
+          <Home />
+        </Router>
+      </AppContextProvider>
+    )
   })
 
   it('has a valid h1', () => {
-    const wrapper = shallow(<Home />)
+    const { getByText } = render(
+      <AppContextProvider>
+        <Router>
+          <Home />
+        </Router>
+      </AppContextProvider>
+    )
 
-    expect(wrapper.find('h1').html()).toContain('Around the World')
+    expect(getByText('Around the World')).toBeInTheDocument()
   })
 })

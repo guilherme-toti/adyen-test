@@ -1,8 +1,9 @@
 import React from 'react'
-import { mount } from 'enzyme'
+import { render } from '@testing-library/react'
 import routeData from 'react-router'
 
 import Select from '../Select'
+import { AppContextProvider } from '../../contexts/AppContext'
 
 describe('<Select /> component', () => {
   beforeEach(() => {
@@ -13,8 +14,11 @@ describe('<Select /> component', () => {
   });
 
   it('has 4 options inside', () => {
-    const wrapper = mount(<Select />)
-
-    expect(wrapper.find('option').length).toBe(4)
+    const { getAllByRole } = render(
+      <AppContextProvider>
+        <Select />
+      </AppContextProvider>
+    )
+    expect(getAllByRole('option').length).toEqual(4)
   })
 })

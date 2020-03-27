@@ -21,7 +21,7 @@ const forecast5Days = city => {
     .then(res => Forecast(res))
 }
 
-const getWeather = city => {
+const getWeather = ({ city }) => {
   return Promise.all([
     currentConditions(city),
     forecast5Days(city)

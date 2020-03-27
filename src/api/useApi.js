@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react'
 
-const useApi = (city, request) => {
+const useApi = (departureCode, city, request) => {
   const [data, setData] = useState({})
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     setLoading(true)
-    request(city)
+    request({ departureCode, city })
       .then(res => {
         setData(res)
         setLoading(false)
       })
-  }, [city, request])
+  }, [departureCode, city, request])
 
   return [data, loading]
 }

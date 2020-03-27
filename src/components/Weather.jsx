@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useAppContext } from '../contexts/AppContext'
+
 import useApi from '../api/useApi'
 import getWeather from '../api/weather'
 
@@ -9,7 +11,8 @@ import WeatherLoadingIcon from '../assets/images/weather-loading.svg'
 import CloudsImage from '../assets/images/clouds-unsplash.jpg'
 
 const Weather = ({ city }) => {
-  const [data, loading] = useApi(city, getWeather)
+  const { departureCode } = useAppContext()
+  const [data, loading] = useApi(departureCode, city, getWeather)
 
   return (
     <Card title="Weather" bgImage={CloudsImage}>
