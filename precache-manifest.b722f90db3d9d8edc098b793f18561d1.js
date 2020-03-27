@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fba190c0be9d722b7989011c2ccb2028",
+    "revision": "c59a8c98418ca1520de3a76bf2435214",
     "url": "/adyen-test/index.html"
   },
   {
-    "revision": "75a16408ee8482598831",
+    "revision": "ecc2dff2c6b97915ae14",
     "url": "/adyen-test/static/css/main.42f43015.chunk.css"
   },
   {
-    "revision": "be301a59bdb020671c1e",
-    "url": "/adyen-test/static/js/2.f6fc40a8.chunk.js"
+    "revision": "328094cb7bb13faff3e2",
+    "url": "/adyen-test/static/js/2.d7389ff3.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/adyen-test/static/js/2.f6fc40a8.chunk.js.LICENSE.txt"
+    "revision": "c6cf734fdd403ef0c0446c80816bd98a",
+    "url": "/adyen-test/static/js/2.d7389ff3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75a16408ee8482598831",
-    "url": "/adyen-test/static/js/main.ec490a7b.chunk.js"
+    "revision": "ecc2dff2c6b97915ae14",
+    "url": "/adyen-test/static/js/main.96978621.chunk.js"
   },
   {
     "revision": "5d944e29e4e02b1baa66",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "49819b21c226bdf7015845d4bdf9e273",
     "url": "/adyen-test/static/media/airplane-unsplash.49819b21.jpg"
+  },
+  {
+    "revision": "f0211a74e02c0c9d7d784d393def1b7f",
+    "url": "/adyen-test/static/media/airports.f0211a74.csv"
   },
   {
     "revision": "91d8ff8ac25f51073a577408ae9cec86",

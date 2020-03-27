@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/adyen-test/precache-manifest.bad74f81d3aa7cc46533fb71eb7e5d12.js"
+  "/adyen-test/precache-manifest.b722f90db3d9d8edc098b793f18561d1.js"
 );
 
 self.addEventListener('message', (event) => {
