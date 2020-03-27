@@ -2,7 +2,10 @@ import { getCityKey } from '../lib/cities'
 
 import { Conditions, Forecast } from './models/weather'
 
-const API_KEY = 'hWIKuLs88HFcXk6ehT6THGCXYNwFEDO7'
+// Usually I put it on ENV file or on the build env
+// In this case this is here because it's hosted at GitHub Pages
+// So it won't matter
+const API_KEY = 'ZAHnEkI9F4Vprf4gvGeYrCYWAvHRBeJS'
 const BASE_URL = 'https://dataservice.accuweather.com/'
 
 const currentConditions = city => {
