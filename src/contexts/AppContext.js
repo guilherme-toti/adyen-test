@@ -43,10 +43,8 @@ const AppContextProvider = ({ children }) => {
   const filterAirports = useCallback(text => {
     const filteredAirports = airports.filter(a => a.city.toLowerCase().startsWith(text.toLowerCase()))
 
-    if (filteredAirports.length > 0) {
-      setOptions(filteredAirports)
-      saveAirportOptions(filteredAirports)
-    }
+    setOptions(filteredAirports)
+    saveAirportOptions(filteredAirports)
   }, [airports])
 
   const handleSetDepartureCode = useCallback(code => {

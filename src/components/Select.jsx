@@ -20,7 +20,7 @@ const Select = ({ defaultValue }) => {
         disabled={!departureCode}
         defaultValue={defaultValue}
         onChange={handleChange}
-        className="block cursor-pointer appearance-none h-full w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className={`block ${departureCode && 'cursor-pointer'} appearance-none h-full w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`}
       >
         <option value="">{!departureCode ? 'Waiting your location...' : 'Choose a place'}</option>
         <option value="amsterdam">Amsterdam</option>

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 
 import { useAppContext } from '../contexts/AppContext'
 
@@ -18,8 +18,13 @@ const Input = () => {
     }
 
     filterAirports(value)
-    setStep('select')
   }, [value, filterAirports])
+
+  useEffect(() => {
+    if (options.length > 0) {
+      setStep('select')
+    }
+  }, [options])
 
   return (
     <div className="flex items-center w-full bg-gray-200 border border-gray-200 rounded leading-tight py-2">
@@ -47,7 +52,7 @@ const Input = () => {
         <>
           <div>
             <select
-              value={departureCode}
+              value={departureCode || ''}
               onChange={e => setDepartureCode(e.target.value)}
               className="block appearance-none bg-transparent w-full text-gray-700 py-3 px-2 leading-tight"
             >
