@@ -1,4 +1,4 @@
-# Adyen Technical Test
+# Work Around the World
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -42,4 +42,4 @@ To build and automatically deploy it to GitHub Pages
 $ yarn deploy
 ```
 
-After deployment is done, access [https://guilherme-toti.github.io/adyen-test](https://guilherme-toti.github.io/adyen-test)
+After deployment is done, access [https://guilherme-toti.github.io/waw](https://guilherme-toti.github.io/waw)
