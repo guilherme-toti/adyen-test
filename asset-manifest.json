@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/adyen-test/static/css/main.42f43015.chunk.css",
-    "main.js": "/adyen-test/static/js/main.546e1e0a.chunk.js",
-    "main.js.map": "/adyen-test/static/js/main.546e1e0a.chunk.js.map",
-    "runtime-main.js": "/adyen-test/static/js/runtime-main.7eaf894c.js",
-    "runtime-main.js.map": "/adyen-test/static/js/runtime-main.7eaf894c.js.map",
-    "static/js/2.d7389ff3.chunk.js": "/adyen-test/static/js/2.d7389ff3.chunk.js",
-    "static/js/2.d7389ff3.chunk.js.map": "/adyen-test/static/js/2.d7389ff3.chunk.js.map",
-    "index.html": "/adyen-test/index.html",
-    "precache-manifest.c779f450ea2c65253c797a8fe66fdd2e.js": "/adyen-test/precache-manifest.c779f450ea2c65253c797a8fe66fdd2e.js",
-    "service-worker.js": "/adyen-test/service-worker.js",
-    "static/css/main.42f43015.chunk.css.map": "/adyen-test/static/css/main.42f43015.chunk.css.map",
-    "static/js/2.d7389ff3.chunk.js.LICENSE.txt": "/adyen-test/static/js/2.d7389ff3.chunk.js.LICENSE.txt",
-    "static/media/airplane-unsplash.jpg": "/adyen-test/static/media/airplane-unsplash.49819b21.jpg",
-    "static/media/airports.csv": "/adyen-test/static/media/airports.f0211a74.csv",
-    "static/media/tailwind.css": "/adyen-test/static/media/avenir-next.b5ed9330.otf",
-    "static/media/clouds-unsplash.jpg": "/adyen-test/static/media/clouds-unsplash.799f5d9d.jpg",
-    "static/media/home-background.png": "/adyen-test/static/media/home-background.bd6936e4.png",
-    "static/media/tickets-loading.svg": "/adyen-test/static/media/tickets-loading.e39d1c3a.svg",
-    "static/media/weather-loading.svg": "/adyen-test/static/media/weather-loading.50538102.svg"
+    "main.css": "/waw/static/css/main.e5a3ac23.chunk.css",
+    "main.js": "/waw/static/js/main.d1f9f320.chunk.js",
+    "main.js.map": "/waw/static/js/main.d1f9f320.chunk.js.map",
+    "runtime-main.js": "/waw/static/js/runtime-main.f43a3894.js",
+    "runtime-main.js.map": "/waw/static/js/runtime-main.f43a3894.js.map",
+    "static/js/2.e1825aa7.chunk.js": "/waw/static/js/2.e1825aa7.chunk.js",
+    "static/js/2.e1825aa7.chunk.js.map": "/waw/static/js/2.e1825aa7.chunk.js.map",
+    "index.html": "/waw/index.html",
+    "precache-manifest.5bf98fa01e034df24024a591174bde7f.js": "/waw/precache-manifest.5bf98fa01e034df24024a591174bde7f.js",
+    "service-worker.js": "/waw/service-worker.js",
+    "static/css/main.e5a3ac23.chunk.css.map": "/waw/static/css/main.e5a3ac23.chunk.css.map",
+    "static/js/2.e1825aa7.chunk.js.LICENSE.txt": "/waw/static/js/2.e1825aa7.chunk.js.LICENSE.txt",
+    "static/media/airplane-unsplash.jpg": "/waw/static/media/airplane-unsplash.49819b21.jpg",
+    "static/media/airports.csv": "/waw/static/media/airports.f0211a74.csv",
+    "static/media/tailwind.css": "/waw/static/media/avenir-next.b5ed9330.otf",
+    "static/media/clouds-unsplash.jpg": "/waw/static/media/clouds-unsplash.799f5d9d.jpg",
+    "static/media/home-background.png": "/waw/static/media/home-background.bd6936e4.png",
+    "static/media/tickets-loading.svg": "/waw/static/media/tickets-loading.e39d1c3a.svg",
+    "static/media/weather-loading.svg": "/waw/static/media/weather-loading.50538102.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7eaf894c.js",
-    "static/js/2.d7389ff3.chunk.js",
-    "static/css/main.42f43015.chunk.css",
-    "static/js/main.546e1e0a.chunk.js"
+    "static/js/runtime-main.f43a3894.js",
+    "static/js/2.e1825aa7.chunk.js",
+    "static/css/main.e5a3ac23.chunk.css",
+    "static/js/main.d1f9f320.chunk.js"
   ]
 }
